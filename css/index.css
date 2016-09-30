@@ -1,0 +1,222 @@
+
+@charset "utf-8";
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	margin:40px 0px 0px 0px;
+	background:#fff;
+}
+/*头部样式开始*/
+#header{
+	width:100%;
+	height:40px;
+	background:url( "../images/header_bg.png" );
+	position:absolute;
+	top:0px;
+}
+#header .header_main{
+	width:800px;
+	height:40px;
+	margin:0px auto;
+}
+#header .header_main h1{
+	line-height:40px;
+	font-size:20px;
+	color:#666;
+	margin:0px;
+	padding:0px 10px;
+	float:left;
+}
+#header .header_search{
+	float:left;
+	padding:6px 0px 0px 0px;
+}
+#header .header_search .search{
+	width:300px;
+	height:24px;
+	border:1px solid #ccc;
+	background:#fff;
+	color:#666;
+	font-size:14px;
+	text-indent:10px;
+}
+#header .header_button{
+	padding:4px;
+	float:left;
+}
+#header .header_member{
+	float:right;
+	line-height:40px;
+}
+#header .header_member a{
+	font-size:14px;
+	text-decoration:none;
+	color:#555;
+}
+/*注册表单样式开始*/
+#reg,#login,#question{
+	padding:15px 0px 0px 15px;
+}
+#reg p,#login p,#question p{
+	padding:0px;
+	margin:10px 0px;
+}
+#reg p label,#login p label,#question p label{
+	font-size:14px;
+	color:#666;
+}
+#reg p .star,#login p .star,#question p .star{
+	color:red;
+	font-size:22px;
+}
+#reg ol,#login ol,#question ol{
+	margin:0px;
+	padding:0px 0px 0px 20px;
+	color:maroon;
+}
+#reg ol li,#login ol li,#question ol li{
+	height:20px;
+}
+#reg .text,#login .text,#question .text{
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius:4px;
+	color:#666;
+	width:200px;
+	height:20px;
+	text-indent:5px;
+}
+.succ{
+	display:inline-block;
+	width:28px;
+	background:url( "../images/reg_succ.png" ) no-repeat;
+}
+/*tooltip显示样式更改*/
+.ui-tooltip{
+	color:red;
+}
+.reg_tooltip{
+	color:green;
+}
+.ui-autocomplete{
+	z-index:999;  !important
+}
+/*loading开始*/
+#loading{
+	background:url( "../images/loading.gif" ) no-repeat 20px center;
+	line-height:25px;
+	font-size:14px;
+	font-weight:bold;
+	text-indent:40px;
+	color:#666;
+}
+/*登录表单*/
+#expires{
+	position:relative;
+	top:2px;
+	margin:0px 0px 0px 120px;
+}
+/*error提问登录*/
+#error{
+	background:url( "../images/error.png" ) no-repeat 20px center;
+	line-height:28px;
+	font-size:14px;
+	font-weight:bold;
+	text-indent:40px;
+	color:#666;
+}
+/*主内r容区选项卡*/
+#main {
+	width:800px;
+	margin:0 auto;
+	padding:10px 0 0 0;
+}
+#main .main_left {
+	width:580px;
+	float:left;
+}
+#main .main_right {
+	width:200px;
+	float:right;
+}
+.content h4{
+	color:#666;
+	font-weight:normal;
+}
+.content h3{
+	color:#369;
+}
+.content .editor{
+	color:#333;
+    line-height:180%;
+}
+.content .bottom{
+	padding:5px 0 0 0;
+}
+.content hr{
+    color:#ccc;
+    height:1px;
+}
+.content .up{
+    float:right;
+    color:#369;
+    cursor:pointer;
+}
+.content .down{
+    color:#369;
+    cursor:pointer;
+}
+.content .comment{
+	color:#336699;
+	cursor:pointer;
+}
+/*评论列表区*/
+.comment_list{
+	border:1px solid #ccc;
+	border-radius:4px;
+	padding:5px 10px;
+	min-height:25px;
+	display:none;
+}
+.comment_list dl{
+	margin:0px;
+	padding:3px 10px 5px 0px;
+	border-bottom:1px solid #ddd;
+}
+.comment_list dl dt{
+	margin:0px;
+	padding:5px 0px 0px 0px;
+	color:#369;
+}
+.comment_list dl dd{
+	margin:0px;
+	padding:0px;
+	line-height:180%;
+	color:#333;
+}
+.comment_list dl dd.date{
+	color:#999;
+}
+.comment_add{
+	border:none;
+	text-align:right;
+}
+.comment_add textarea{
+	width:100%;
+	background:#fff;
+	border:1px solid #ccc;
+	padding:5px;
+	margin:0px 0px 5px 0px;
+	resize:none;
+	font-size:12px;
+	border-radius:4px;
+	color:#666;
+}
+.comment_add input{
+	cursor:pointer;
+    position:relative;
+    right:-5px;
+}

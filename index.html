@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>知问前端</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" href="uEditor/uEditor.css" />
+	<!--站点添加图标-->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+</head>
+<body>
+	
+	<!--头部开始-->
+	<div id="header">
+		<div class="header_main">
+			<h1>知问</h1>
+			<div class="header_search">
+				<input type="text" name="search" class="search"/>
+			</div>
+			<div class="header_button">
+				<button id="search_button">查询</button>
+				<button id="question_button">提问</button>
+			</div>
+			<div class="header_member">
+				<a href="javascript:void(0);" id="reg_a">注册</a>
+				<a href="javascript:void(0);" id="member">用户</a> |
+				<a href="javascript:void(0);" id="login_a">登录</a>
+				<a href="javascript:void(0);" id="logout">登出</a>
+			</div>
+		</div>
+	</div>
+	
+	<!--注册对话框开始-->
+	<form id="reg" title="会员注册" style="display:none;">
+		<ol class="reg_error"></ol>
+		<p>
+			<label for="user">账号:</label>
+			<input class="text" type="text" name="user" id="user"/>
+	        <span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码:</label>
+			<input type="password" name="pass" id="pass" class="text"/>
+		    <span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">邮箱:</label>
+			<input type="text" name="email" id="email" class="text"/>
+		    <span class="star">*</span>
+		</p>
+		<p>
+			<label>性别:</label>
+			<input type="radio" name="sex" value="male" id="male"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+		</p>
+		<p>
+			<label for="birthday">出生年月:</label>
+			<input type="text" class="text" name="birthday" id="birthday" readonly="readonly"/>
+		</p>
+	</form>
+	<!--注册对话框结束-->
+    
+    <!--登录对话框开始-->
+    <form id="login" style="display:none;" title="会员登录">
+    	<ol class="login_error"></ol>
+		<p>
+			<label for="login_user">账号:</label>
+			<input class="text" type="text" name="login_user" id="login_user"/>
+	        <span class="star">*</span>
+		</p>
+		<p>
+			<label for="login_pass">密码:</label>
+			<input type="password" name="login_pass" id="login_pass" class="text"/>
+		    <span class="star">*</span>
+		</p>
+		<p>
+			<input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登陆后有效期一周</label>
+		</p>
+    </form>
+    <!--登录对话框结束--> 
+     
+    <!--问题提问对话框开始-->
+    <form id="question" action="123.html" method="post" title="提问">
+    	<p>
+			<label for="title">问题名称:</label>
+            <input type="text" name="title" class="text" style="width:390px;" id="title"/>
+            <span class="star"></span>
+        </p>
+        <p>
+        	<textarea class="uEditorCustom" name="content">请填写问题描述...</textarea>
+        </p>
+    </form>
+    <!--问题提问对话框结束-->
+    
+    <!--loading制作-->
+    <div id="loading">
+    	数据交互中...
+    </div>
+    
+    <!--error提问-->
+    <div id="error">
+    	请登陆后操作...
+    </div>
+    
+    <!--主内容区开始-->
+    <!--包括选项卡和折叠菜单-->
+    <div id="main">
+    	<div class="main_left">
+    		<div id="tabs">
+    			<ul>
+    				<li><a href="tabs1.html">tabs1</a></li>
+    				<li><a href="tabs2.html">tabs2</a></li>
+    				<li><a href="tabs3.html">tabs3</a></li>
+    			</ul>
+    		</div>
+    		<div class="content">
+    			
+    		</div>
+    	</div>
+    	<div class="main_right">
+    		<div id="accordion">
+    			<h3>菜单1</h3>
+    			<div>内容1</div>
+    			<h3>菜单2</h3>
+    			<div>内容2</div>
+    			<h3>菜单3</h3>
+    			<div>内容3</div>
+    		</div>
+    	</div>
+    </div>
+    <!--主内容区结束-->
+    
+    <script src="js/jquery.js" ></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.form.js" ></script>
+	<script src="js/jquery.cookie.js" ></script>
+	<script src="js/jquery-migrate-1.2.1.js" ></script>
+	<script src="uEditor/uEditor.js" ></script>
+	
+</body>
+</html>
